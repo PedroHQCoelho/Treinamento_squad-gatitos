@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validador de CPF</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Validador de CPF</title>
     
 </head>
 <body>
@@ -16,11 +18,11 @@
     <main>
     <div class="top">
         <h2>Digite seu CPF</h2>
-        <input type="text" class="number" placeholder="Exemplo: 123.456.421-12">
-        <button>Verificar</button>
+        <input type="text" id="cpf" class="number" placeholder="Exemplo: 123.456.421-12">
+        <button onclick="validaCPF()">Verificar</button>
     </div>
     <div class="bottom">
-        <textarea name="" id="resultadocpf" readonly></textarea>
+        <textarea name="resposta" id="resultadocpf" readonly></textarea>
     </div>    
     </main>
 

@@ -26,10 +26,15 @@ function validaCPF() {
 
     resultado=""
     if (modulo1.toString() + modulo2.toString() === cpfSoNumero.substr(9, 2)) {
-        resultado="Válido"
+        resultado ="Válido"
+        document.getElementById('resultadocpf').style.backgroundColor = '#00FF38' ; 
     } else {
-        resultado="Falso"
+        resultado ="Falso"
+        document.getElementById('resultadocpf').style.backgroundColor = '#FF1515' ;
     }
 
-    document.getElementById("resultadocpf").innerText= `Seu CPF é ${resultado}`
+    document.getElementById("resultadocpf").innerText = `
+    Seu CPF é: 
+    ${resultado}
+    `
 }

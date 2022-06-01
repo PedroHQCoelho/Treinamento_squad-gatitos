@@ -105,6 +105,12 @@ textarea {
     border-radius: 10px;
     background-color: #716B6B;
     margin-top: 10px;
+    padding-left: 10px;
+    color: #FFFFFF;
+}
+
+#resultadocpf {
+    white-space: pre-line;
 }
 
 footer {

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desafio #01 do Treinamento da Se Joga!" />
+    <meta
+      name="keywords"
+      content="treinamento, treino, desafio, landing, page, starbucks"
+    />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desafio #01: Landing Page - Starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo 1.png" class="logo"></a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/">Menu</a>
+                <a href="/">Nossos Valores</a>
+                <a href="/">Contato</a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Não é só café<br>É <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia est cursus mollis ac cursus enim aliquet enim cursus. Commodo a at viverra viverra quis dictum mauris, volutpat. Risus felis velit elit, in fs ut nec ornare nisl, leo scelerisque a. Aliquam, ut turpis eleifend aenean fringilla non. Viverra maecentum dui erat auctor dui velit at eu. Eget tincidunt aliquam nam sagittis ipsum leo. Ipsum aliquam placerat ut sit. Pulvinar id quis blandit elit nulla nullam porttitor phasellus enim. Rutrum at mollis imperdiet matum justo, risus. Aliquam id convallis venenatis, sed magnis eleifend. Quisque purus duis viverra suspendisse cras blandit mi iaculis libero. Purus neque risus, pharetra gravida et sit. Faucibus mi velit, sed varius arcu, faucibus sed.</p>
+                <button>Saiba Mais</button>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#0C914B');changeSpanColor('#0C914B');changeButtonColor('#CED8C2');changeButtonBackground('#0C914B')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#D89B9E');changeSpanColor('#D89B9E');changeButtonColor('#131712');changeButtonBackground('#D89B9E')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="img/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="Instagram"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        function changeSpanColor(color) {
+            const span = document.querySelector('span');
+            span.style.color = color;
+        }
+
+        function changeButtonColor(color) {
+            const button = document.querySelector('button');
+            button.style.color = color;
+        }
+
+        function changeButtonBackground(color) {
+            const button = document.querySelector('button');
+            button.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

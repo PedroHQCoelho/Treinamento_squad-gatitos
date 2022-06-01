@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    background-color: #716B6B;
+}
+
+header {
+    display: flex;
+    background-color: #0d6efd;
+    align-items: center;
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+input {
+    width: 521px;
+    height: 63px;
+    left: 808px;
+    top: 488px;
+    
+    background: #716B6B;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+input::placeholder {
+    color: #FFF;
+}
+
+.input-area {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #FFF;
+    margin-bottom: 100px;
+}
+
+h2 {
+    color: #FFF;
+}
+
+.area {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.image-decoration {
+    display: flex;
+    max-width: 100%;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3F3D3D;
+    padding: 100px;
+    border-radius: 0.5em;
+}
+
+
+button {
+    height: 3em;
+    width: 40%;
+    background-color: #FF9500;
+    border: none;
+    color: #FFF;
+    border-radius: 0.5em;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    background-color: #716B6B;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+textarea::placeholder {
+    color: #FFF;
+}
+
+p {
+    font-weight: 300;
+}
+
+footer {
+    display: flex;
+    background-color: #0d6efd;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+}
+
+.textoBranco {
+    color: #FFF;
+}

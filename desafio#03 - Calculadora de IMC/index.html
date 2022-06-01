@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <header>
+        Calculadora de IMC
+    </header>
+    <main>
+        <div class="area">
+        <div class="image-decoration">
+            <img src="img/image.png" alt="">
+        </div>
+        <div class="container">
+            <h1>Calculadora de IMC</h1>
+            <div class="input-area">
+                <h2>Altura</h2>
+                <input type="number" id="height" placeholder="Digite sua altura em cms">
+            </div>
+            <div class="input-area">
+                <h2>Peso</h2>
+                <input type="number" id="weight" placeholder="Digite seu peso em Kgs">
+            </div>
+            <button onclick="calculaIMC()">Calcular</button>
+            <h2>Resultado</h2>
+            <textarea name="imcresposta" id="imcresposta" cols="35" placeholder="Seu IMC:" readonly></textarea>
+            </div>
+        </div>    
+        <script src="script.js"></script>
+        <div class="info">
+            <h2>
+               <p>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso ideal.</p> 
+               <p>Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade adotado pela Organização Mundial da Saúde (OMS).</p>
+            </h2>
+        </div>
+    </main>
+    <footer>
+        <p class="textoBranco">© Copyright 2022 - Pedro Coelho</p>
+        <p class="textoBranco">Todos os direitos reservados</p>
+      </footer>
+</body>
+</html>

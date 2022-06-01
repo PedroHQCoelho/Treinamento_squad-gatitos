@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 100px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav a {
+    color: #131712;
+    padding: 10px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+header nav a:hover {
+    color: #0C914B;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: #131712;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    color: #0C914B;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.content .textBox p {
+    color: #131712;
+}
+
+.content .textBox button {
+    background-color: #0C914B;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 28.43px;
+    line-height: 50px;
+    text-align: center;
+    color: #CED8C2;
+    margin-top: 20px;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.content .textBox button:hover {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .5);
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img {
+    max-width: 340px;
+}
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover {
+    transform: translateY(-15px);
+}
+
+.thumb li img {
+    max-width: 100px;
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li img {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.social li img:hover {
+    transform: translateX(15px);
+    transition: .5s;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0C914B;
+    clip-path: circle(600px at right 800px);
+}
